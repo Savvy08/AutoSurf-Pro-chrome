@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AutoSurf Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>🚀 AutoSurf Pro</h1>
+    <span class="tag">@Savyy08</span>
+  </div>
+
+  <div id="status" class="status">🔴 Отключен</div>
+
+  <label>🌐 Сайты:</label>
+  <textarea id="siteList" rows="3" placeholder="https://example.com"></textarea>
+
+  <label>📁 Загрузить .txt:</label>
+  <input type="file" id="siteFile" accept=".txt">
+
+  <label>⏱ Интервал переходов (мин):</label>
+  <input type="number" id="interval" min="1" value="5">
+
+  <label>🕒 Время до перехода (сек):</label>
+  <input type="number" id="clickDelay" min="1" value="10">
+
+  <label>📜 Тип скролла:</label>
+  <select id="scrollType">
+    <option value="slow">🐢 Медленный</option>
+    <option value="smooth" selected>🚶 Средний</option>
+    <option value="fast">🐇 Быстрый</option>
+  </select>
+
+  <label>🚫 Блэклист (через запятую):</label>
+  <input type="text" id="blacklistInput" placeholder="youtube.com,facebook.com">
+
+  <div class="buttons">
+    <button id="start">🚀 Старт</button>
+    <button id="stop">⛔ Стоп</button>
+    <button id="restart">🔄 Рестарт</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
